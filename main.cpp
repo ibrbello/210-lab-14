@@ -29,9 +29,36 @@ class Color {
             cout << setw(15) << "Red: " << red << endl;
             cout << setw(15) << "Green: " << green << endl;
             cout << setw(15) << "Blue: " << blue << endl;
+            cout << endl;
         }
 };
 
 
 // Step 2: main function
 // Create multiple Color objects and use print to output neatly
+int main() {
+    Color black;
+    black.setRed(0);
+    black.setGreen(0);
+    black.setBlue(0);
+
+    Color purple;
+    purple.setRed(160); 
+    purple.setGreen(32);
+    purple.setBlue(255);
+
+    Color brown; 
+    brown.setRed(160);
+    brown.setGreen(128);
+    brown.setBlue(96);
+
+    // Print out object contents
+    cout << "Black RGB values: " << endl;
+    black.print();
+    cout << "Purple RGB values: " << endl;
+    purple.print();
+    cout << "Brown RGB values: " << endl;
+    brown.print();
+
+    return 0;
+}
